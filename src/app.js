@@ -21,7 +21,19 @@ window.onload = function() {
     "while I was praying"
   ];
 
-  const frase = who[Math.random];
+  function RandomItem(array) {
+    const randomIndex = Math.floor(Math.random() * array.length);
+    const randomElement = array[randomIndex];
 
-  return frase;
+    return randomElement;
+  }
+
+  let quien = RandomItem(who);
+  let accion = RandomItem(action);
+  let que = RandomItem(what);
+  let cuando = RandomItem(when);
+
+  let frase = quien + " " + accion + " " + que + " " + cuando;
+
+  document.getElementById("excuse").innerHTML = frase;
 };
