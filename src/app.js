@@ -37,3 +37,4 @@ window.onload = function() {
 
   document.getElementById("excuse").innerHTML = frase;
 };
+document.getElementById("btn-volumen").addEventListener("click", window.onload);
